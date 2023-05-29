@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.print("Please enter a number");
+        int num1= input.nextInt();
+
+        double num2= num1*0.6214;
+        System.out.println("Kph  MPH\n" +num1 +"  " +num2) ;
+    }
+}

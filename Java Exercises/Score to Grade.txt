@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) throws Throwable {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter input");
+        int score = input.nextInt();
+
+        if(score==100)
+        {
+            System.out.println("Bravo Bosi");
+        }
+        else if(score>=0 && score<100)
+        {
+            if(score>=90)
+            {
+                System.out.println("A");
+            }
+            else if(score>=80 && score<90)
+            {
+                System.out.println("B");
+            }
+            else if (score>=70 && score < 80){
+
+            }
+            else{
+                System.out.println("F/ peder");
+            }
+        }
+        else{
+            System.out.println("Error");
+
+        }
+
+
+    }
+}

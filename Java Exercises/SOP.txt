@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.print("Enter X N");
+
+        int n = input.nextInt();
+        int x = input.nextInt();
+
+        int arr[]=new int[n];
+        for(int e = 0; e < n; e++){
+            System.out.println("enter new array val");
+            arr[e]= input.nextInt();
+        }
+
+        int output = SOP(arr,x);
+        System.out.println(output);
+
+
+    }
+    public static int SOP(int arr[],int sum){
+        int pairs=0;
+        for(int i = 0; i < arr.length; i++){
+            for(int j = i; j < arr.length; j++){
+                if( arr[i] + arr[j] ==sum){
+                    pairs++;
+                }
+
+            }
+        }
+
+        return pairs;
+    }
+}

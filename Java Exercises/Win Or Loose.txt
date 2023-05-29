@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.print("Please write an integer");
+        int num1= input.nextInt();
+
+        if(num1>=56 && num1<=78)
+        {
+            System.out.print("You win");
+        }
+        else
+        {
+            System.out.print("You Loose");
+        }
+
+    }
+}
